@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Elite Stack Blog - Professional Hosting Insights. Expert tips, guides, and industry news about web hosting.">
+    <meta name="keywords" content="hosting blog, web hosting tips, hosting guides, server management, cloud hosting">
+    <meta name="author" content="Elite Stack">
+    <meta property="og:title" content="Elite Stack Blog - Professional Hosting Insights">
+    <meta property="og:description" content="Discover expert insights and guides about professional hosting solutions.">
+    <meta property="og:type" content="website">
+    <title>Elite Stack Blog - Professional Hosting Insights</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            scroll-behavior: smooth;
+        }
+        .mobile-menu {
+            transition: all 0.3s ease-in-out;
+        }
+        .mobile-menu.active {
+            display: flex;
+        }
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .animate-fade-in-up {
+            animation: fadeInUp 0.6s ease-out;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-900 font-sans">
+    <!-- Announcement Bar -->
+    <div class="bg-gray-900 text-white py-3 px-4 text-center">
+        <p class="text-sm md:text-base font-medium"><i class="fas fa-truck mr-2"></i>Fast Worldwide Shipping (5 days delivery) | 100% Satisfaction Guarantee</p>
+    </div>
+
+    <!-- Header/Navigation -->
+    <header class="sticky top-0 z-50 bg-white shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <a href="https://servaas101.github.io/elite-stack---professional-hosting-service-2025-10-31-tdw75" class="text-2xl font-bold text-gray-900 hover:text-blue-600 transition-colors duration-300">
+                        <i class="fas fa-server mr-2"></i>Elite Stack
+                    </a>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <nav class="hidden md:flex space-x-8 items-center">
+                    <a href="https://servaas101.github.io/elite-stack---professional-hosting-service-2025-10-31-tdw75" class="text-gray-700 hover:text-blue-600 transition-colors duration-300 font-medium">← Back</a>
+                </nav>
+
+                <!-- Mobile Menu Button -->
+                <button class="mobile-menu-button md:hidden text-gray-900 focus:outline-none" aria-label="Toggle menu" aria-expanded="false">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+
+            <!-- Mobile Navigation Menu -->
+            <div class="mobile-menu hidden md:hidden flex-col pb-4 space-y-2">
+                <a href="https://servaas101.github.io/elite-stack---professional-hosting-service-2025-10-31-tdw75" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-lg transition-colors duration-300">← Back</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="blog-hero" class="relative py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-blue-50 to-gray-50">
+        <div class="max-w-7xl mx-auto text-center">
+            <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6 tracking-tight animate-fade-in-up">
+                Our Blog
+            </h1>
+            <p class="text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed">
+                Expert insights, practical guides, and industry news to help you make the most of your hosting solution
+            </p>
+        </div>
+    </section>
+
+    <!-- Blog Purpose Section -->
+    <section class="py-16 px-4 sm:px-6 lg:px-8 bg-white">
+        <div class="max-w-4xl mx-auto">
+            <div class="bg-gradient-to-br from-gray-50 to-gray-100 rounded-2xl p-8 md:p-12 border-2 border-gray-200">
+                <h2 class="text-3xl font-bold text-gray-900 mb-6">Welcome to the Elite Stack Blog</h2>
+                <p class="text-gray-700 leading-relaxed mb-6 text-lg">
+                    Our blog is your go-to resource for everything related to web hosting, server management, and digital infrastructure. Whether you're a seasoned developer, a small business owner, or just starting your online journey, you'll find valuable content tailored to your needs.
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="flex items-start">
+                        <i class="fas fa-lightbulb text-blue-600 text-2xl mr-4 mt-1 flex-shrink-0"></i>
+                        <div>
+                            <h3 class="font-bold text-gray-900 mb-2">Expert Tips & Tricks</h3>
+                            <p class="text-gray-600 text-sm">Learn best practices and optimization techniques from our experienced team</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <i class="fas fa-book text-green-600 text-2xl mr-4 mt-1 flex-shrink-0"></i>
+                        <div>
+                            <h3 class="font-bold text-gray-900 mb-2">Comprehensive Guides</h3>
+                            <p class="text-gray-600 text-sm">In-depth tutorials covering hosting setup, migration, and management</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <i class="fas fa-newspaper text-purple-600 text-2xl mr-4 mt-1 flex-shrink-0"></i>
+                        <div>
+                            <h3 class="font-bold text-gray-900 mb-2">Industry News</h3>
+                            <p class="text-gray-600 text-sm">Stay updated with the latest developments in web hosting and technology</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Blog Post -->
+    <section class="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+        <div class="max-w-4xl mx-auto">
+            <div class="mb-12">
+                <h2 class="text-3xl font-bold text-gray-900 mb-8">Featured Article</h2>
+            </div>
+
+            <div class="bg-white border-2 border-gray-200 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 group">
+                <div class="p-8 md:p-12">
+                    <div class="flex items-center mb-6">
+                        <span class="inline-block bg-blue-600 text-white px-4 py-2 rounded-full text-sm font-semibold mr-4">Featured</span>
+                        <span class="text-gray-500 text-sm font-medium">
+                            <i class="fas fa-calendar mr-2"></i>October 31, 2025
+                        </span>
+                    </div>
+                    
+                    <h3 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 group-hover:text-blue-600 transition-colors duration-300">
+                        Getting Started with Our Platform
+                    </h3>
+                    
+                    <p class="text-gray-600 leading-relaxed mb-8 text-lg">
+                        Choosing the right web hosting is crucial for your online success. This comprehensive guide explores three main hosting types: shared hosting for budget-conscious beginners, VPS hosting offering middle-ground control and performance, and dedicated servers for maximum power. Key decision factors include performance and speed through SSD storage and CDNs, reliability with 99.9%+ uptime guarantees, robust security features like SSL certificates and DDoS protection, quality 24/7 customer support, and scalability for future growth. Elite Stack stands out by combining lightning-fast infrastructure, exceptional reliability, comprehensive security, and expert support. Evaluate your current needs and anticipated growth before deciding, taking advantage of money-back guarantees to test services risk-free.
+                    </p>
+                    
+                    <div class="flex flex-col sm:flex-row gap-4 items-start sm:items-center">
+                        <a href="https://servaas101.github.io/elite-stack---professional-hosting-service-2025-10-31-tdw75/blog/getting-started-with-our-platform.html" class="inline-flex items-center bg-blue-600 text-white px-8 py-3 rounded-lg font-bold hover:bg-blue-700 hover:shadow-lg transform hover:scale-105 transition-all duration-300">
+                            <i class="fas fa-arrow-right mr-2"></i>Read Full Article
+                        </a>
+                        <div class="text-gray-600 text-sm">
+                            <i class="fas fa-clock mr-2"></i>
+                            <span>8 min read</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recent Blog Posts -->
+    <section class="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-gray-50 to-gray-100">
+        <div class="max-w-7xl mx-auto">
+            <div class="mb-12">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Recent Articles</h2>
+                <p class="text-gray-600 text-lg">More insights coming soon. Check back regularly for new content.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Placeholder 1 -->
+                <div class="bg-white border-2 border-gray-200 rounded-xl p-8 hover:shadow-lg hover:border-blue-400 transform hover:scale-105 transition-all duration-300 group">
+                    <div class="h-48 bg-gradient-to-br from-blue-100 to-blue-50 rounded-lg mb-6 flex items-center justify-center">
+                        <i class="fas fa-pen-fancy text-blue-300 text-4xl"></i>
+                    </div>
+                    <div class="text-gray-500 text-sm font-medium mb-3">
+                        <i class="fas fa-calendar mr-2"></i>Coming Soon
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4 group-hover:text-blue-600 transition-colors duration-300">
+                        Next Article Coming Soon
+                    </h3>
+                    <p class="text-gray-600 leading-relaxed mb-6">
+                        We're working on more valuable content to help you succeed with your hosting solution.
+                    </p>
+                    <div class="text-gray-400 text-sm">
+                        <i class="fas fa-clock mr-2"></i>
+                        <span>Estimated read time</span>
+                    </div>
+                </div>
+
+                <!-- Placeholder 2 -->
+                <div class="bg-white border-2 border-gray-200 rounded-xl p-8 hover:shadow-lg hover:border-blue-400 transform hover:scale-105 transition-all duration-300 group">
+                    <div class="h-48 bg-gradient-to-br from-green-100 to-green-50 rounded-lg mb-6 flex items-center justify-center">
+                        <i class="fas fa-pen-fancy text-green-300 text-4xl"></i>
+                    </div>
+                    <div class="text-gray-500 text-sm font-medium mb-3">
+                        <i class="fas fa-calendar mr-2"></i>Coming Soon
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4 group-hover:text-blue-600 transition-colors duration-300">
+                        Another Article Coming Soon
+                    </h3>
+                    <p class="text-gray-600 leading-relaxed mb-6">
+                        Stay tuned for expert insights on hosting optimization and best practices.
+                    </p>
+                    <div class="text-gray-400 text-sm">
+                        <i class="fas fa-clock mr-2"></i>
+                        <span>Estimated read time</span>
+                    </div>
+                </div>
+
+                <!-- Placeholder 3 -->
+                <div class="bg-white border-2 border-gray-200 rounded-xl p-8 hover:shadow-lg hover:border-blue-400 transform hover:scale-105 transition-all duration-300 group">
+                    <div class="h-48 bg-gradient-to-br from-purple-100 to-purple-50 rounded-lg mb-6 flex items-center justify-center">
+                        <i class="fas fa-pen-fancy text-purple-300 text-4xl"></i>
+                    </div>
+                    <div class="text-gray-500 text-sm font-medium mb-3">
+                        <i class="fas fa-calendar mr-2"></i>Coming Soon
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4 group-hover:text-blue-600 transition-colors duration-300">
+                        More Content Coming Soon
+                    </h3>
+                    <p class="text-gray-600 leading-relaxed mb-6">
+                        Subscribe to our newsletter to be notified when new articles are published.
+                    </p>
+                    <div class="text-gray-400 text-sm">
+                        <i class="fas fa-clock mr-2"></i>
+                        <span>Estimated read time</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Signup -->
+    <section class="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-blue-600 to-blue-800 text-white relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute top-0 left-0 w-96 h-96 bg-white rounded-full blur-3xl"></div>
+            <div class="absolute bottom-0 right-0 w-96 h-96 bg-white rounded-full blur-3xl"></div>
+        </div>
+        <div class="max-w-2xl mx-auto text-center relative z-10">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6 tracking-tight">Stay Updated</h2>
+            <p class="text-xl text-blue-100 mb-10 leading-relaxed">
+                Subscribe to our newsletter and get the latest hosting tips, guides, and industry news delivered to your inbox.
+            </p>
+            <form class="flex flex-col sm:flex-row gap-4 max-w-md mx-auto" onsubmit="return handleNewsletterSubmit(event)">
+                <input type="email" placeholder="Enter your email" required class="flex-1 px-6 py-3 rounded-lg text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-400 transition-all duration-300" aria-label="Email address">
+                <button type="submit" class="bg-white text-blue-600 px-8 py-3 rounded-lg font-bold hover:bg-blue-50 hover:shadow-lg transform hover:scale-105 transition-all duration-300 inline-flex items-center justify-center whitespace-nowrap">
+                    <i class="fas fa-envelope mr-2"></i>Subscribe
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 tracking-tight">Ready to Get Started?</h2>
+            <p class="text-xl text-gray-600 mb-10 leading-relaxed max-w-2xl mx-auto">
+                Apply the insights from our blog to your hosting solution. Explore Elite Stack's professional hosting services today.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <a href="https://elitestack.co.za/checkout" class="bg-blue-600 text-white px-10 py-4 rounded-lg font-bold text-lg hover:bg-blue-700 hover:shadow-lg transform hover:scale-105 transition-all duration-300 inline-flex items-center">
+                    <i class="fas fa-rocket mr-2"></i>Get Started Now
+                </a>
+                <a href="https://servaas101.github.io/elite-stack---professional-hosting-service-2025-10-31-tdw75" class="border-2 border-blue-600 text-blue-600 px-10 py-4 rounded-lg font-bold text-lg hover:bg-blue-50 hover:shadow-lg transform hover:scale-105 transition-all duration-300 inline-flex items-center">
+                    <i class="fas fa-arrow-left mr-2"></i>Back to Home
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-16 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+                <!-- Company Info -->
+                <div>
+                    <h3 class="text-white font-bold text-xl mb-6 flex items-center">
+                        <i class="fas fa-server mr-2"></i>Elite Stack
+                    </h3>
+                    <p class="text-gray-400 leading-relaxed mb-6">
+                        Professional hosting solutions for businesses of all sizes. Fast, reliable, and secure.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-blue-600 transition-all duration-300 transform hover:scale-110">
+                            <i class="fab fa-facebook-f text-white"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-blue-400 transition-all duration-300 transform hover:scale-110">
+                            <i class="fab fa-twitter text-white"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-pink-600 transition-all duration-300 transform hover:scale-110">
+                            <i class="fab fa-instagram text-white"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-blue-700 transition-all duration-300 transform hover:scale-110">
+                            <i class="fab fa-linkedin-in text-white"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-white font-bold text-lg mb-6">Quick Links</h4>
+                    <ul class="space-y-3">
+                        <li><a href="https://servaas101.github.io/elite-stack---professional-hosting-service-2025-10-31-tdw75" class="text-gray-400 hover:text-white transition-colors duration-300 flex items-center"><i class="fas fa-arrow-right mr-2 text-blue-500"></i>Home</a></li>
+                        <li><a href="https://servaas101.github.io/elite-stack---professional-hosting-service-2025-10-31-tdw75#features" class="text-gray-400 hover:text-white transition-colors duration-300 flex items-center"><i class="fas fa-arrow-right mr-2 text-blue-500"></i>Features</a></li>
+                        <li><a href="https://servaas101.github.io/elite-stack---professional-hosting-service-2025-10-31-tdw75#benefits" class="text-gray-400 hover:text-white transition-colors duration-300 flex items-center"><i class="fas fa-arrow-right mr-2 text-blue-500"></i>Benefits</a></li>
+                        <li><a href="https://servaas101.github.io/elite-stack---professional-hosting-service-2025-10-31-tdw75#about" class="text-gray-400 hover:text-white transition-colors duration-300 flex items-center"><i class="fas fa-arrow-right mr-2 text-blue-500"></i>About Us</a></li>
+                        <li><a href="https://servaas101.github.io/elite-stack---professional-hosting-service-2025-10-31-tdw75#testimonials" class="text-gray-400 hover:text-white transition-colors duration-300 flex items-center"><i class="fas fa-arrow-right mr-2 text-blue-500"></i>Testimonials</a></li>
+                    </ul>
+                </div>
+
+                <!-- Resources -->
+                <div>
+                    <h4 class="text-white font-bold text-lg mb-6">Resources</h4>
+                    <ul class="space-y-3">
+                        <li><a href="https://servaas101.github.io/elite-stack---professional-hosting-service-2025-10-31-tdw75#faq" class="text-gray-400 hover:text-white transition-colors duration-300 flex items-center"><i class="fas fa-arrow-right mr-2 text-blue-500"></i>FAQ</a></li>
+                        <li><a href="blog.html" class="text-gray-400 hover:text-white transition-colors duration-300 flex items-center"><i class="fas fa-arrow-right mr-2 text-blue-500"></i>Blog</a></li>
+                        <li><a href="privacy.html" class="text-gray-400 hover:text-white transition-colors duration-300 flex items-center"><i class="fas fa-arrow-right mr-2 text-blue-500"></i>Privacy Policy</a></li>
+                        <li><a href="terms.html" class="text-gray-400 hover:text-white transition-colors duration-300 flex items-center"><i class="fas fa-arrow-right mr-2 text-blue-500"></i>Terms of Service</a></li>
+                        <li><a href="https://servaas101.github.io/elite-stack---professional-hosting-service-2025-10-31-tdw75#contact" class="text-gray-400 hover:text-white transition-colors duration-300 flex items-center"><i class="fas fa-arrow-right mr-2 text-blue-500"></i>Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h4 class="text-white font-bold text-lg mb-6">Contact Info</h4>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <i class="fas fa-envelope text-blue-500 mr-3 mt-1 flex-shrink-0"></i>
+                            <div>
+                                <p class="text-gray-400">Email</p>
+                                <a href="mailto:info@elitestack.co.za" class="text-white hover:text-blue-400 transition-colors duration-300">info@elitestack.co.za</a>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-phone text-blue-500 mr-3 mt-1 flex-shrink-0"></i>
+                            <div>
+                                <p class="text-gray-400">Phone</p>
+                                <p class="text-white">+27 (0) 21 555 0123</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt text-blue-500 mr-3 mt-1 flex-shrink-0"></i>
+                            <div>
+                                <p class="text-gray-400">Address</p>
+                                <p class="text-white">Cape Town, South Africa</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="border-t border-gray-800 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <p class="text-gray-400 text-center md:text-left mb-4 md:mb-0">
+                        &copy; 2024 Elite Stack. All rights reserved. | Powered by Elite Stack Infrastructure
+                    </p>
+                    <div class="flex space-x-6">
+                        <a href="privacy.html" class="text-gray-400 hover:text-white transition-colors duration-300">Privacy Policy</a>
+                        <a href="terms.html" class="text-gray-400 hover:text-white transition-colors duration-300">Terms of Service</a>
+                        <a href="blog.html" class="text-gray-400 hover:text-white transition-colors duration-300">Blog</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuButton = document.querySelector('.mobile-menu-button');
+        const mobileMenu = document.querySelector('.mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('active');
+            const isExpanded = mobileMenuButton.getAttribute('aria-expanded') === 'true';
+            mobileMenuButton.setAttribute('aria-expanded', !isExpanded);
+        });
+
+        // Close mobile menu when a link is clicked
+        const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+        mobileMenuLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.remove('active');
+                mobileMenuButton.setAttribute('aria-expanded', 'false');
+            });
+        });
+
+        // Newsletter Form Submission
+        function handleNewsletterSubmit(event) {
+            event.preventDefault();
+            const form = event.target;
+            const emailInput = form.querySelector('input[type="email"]');
+            const submitButton = form.querySelector('button[type="submit"]');
+            
+            // Simulate form submission
+            console.log('Newsletter signup:', emailInput.value);
+            
+            // Show success message
+            const originalText = submitButton.innerHTML;
+            submitButton.innerHTML = '<i class="fas fa-check mr-2"></i>Subscribed!';
+            submitButton.classList.add('bg-green-500');
+            submitButton.classList.remove('bg-white', 'text-blue-600', 'hover:bg-blue-50');
+            
+            // Reset form
+            form.reset();
+            
+            // Restore button after 3 seconds
+            setTimeout(() => {
+                submitButton.innerHTML = originalText;
+                submitButton.classList.remove('bg-green-500');
+                submitButton.classList.add('bg-white', 'text-blue-600', 'hover:bg-blue-50');
+            }, 3000);
+            
+            return false;
+        }
+
+        // Smooth scroll behavior
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+                if (href !== '#' && document.querySelector(href)) {
+                    e.preventDefault();
+                    const target = document.querySelector(href);
+                    const offsetTop = target.offsetTop - 80;
+                    window.scrollTo({
+                        top: offsetTop,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Add scroll animation on page load
+        window.addEventListener('load', () => {
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -100px 0px'
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('animate-fade-in-up');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('section > div > div').forEach(el => {
+                observer.observe(el);
+            });
+        });
+    </script>
+</body>
+</html>
