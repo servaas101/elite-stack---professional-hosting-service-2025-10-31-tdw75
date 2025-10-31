@@ -1,0 +1,966 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Elite Stack - Professional Hosting Service. Fast, Reliable, and Secure hosting solutions for your business.">
+    <meta name="keywords" content="hosting, web hosting, professional hosting, reliable hosting, secure hosting">
+    <meta name="author" content="Elite Stack">
+    <meta property="og:title" content="Elite Stack - Professional Hosting Service">
+    <meta property="og:description" content="Get your hosting today with Elite Stack. Fast, Reliable, and Secure solutions.">
+    <meta property="og:type" content="website">
+    <title>Elite Stack - Professional Hosting Service</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            scroll-behavior: smooth;
+        }
+        .mobile-menu {
+            transition: all 0.3s ease-in-out;
+        }
+        .mobile-menu.active {
+            display: flex;
+        }
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .animate-fade-in-up {
+            animation: fadeInUp 0.6s ease-out;
+        }
+        @keyframes slideDown {
+            from {
+                opacity: 0;
+                max-height: 0;
+            }
+            to {
+                opacity: 1;
+                max-height: 500px;
+            }
+        }
+        .faq-item.active .faq-answer {
+            animation: slideDown 0.3s ease-out forwards;
+        }
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            opacity: 0;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-900 font-sans">
+    <!-- Announcement Bar -->
+    <div class="bg-gray-900 text-white py-3 px-4 text-center">
+        <p class="text-sm md:text-base font-medium"><i class="fas fa-truck mr-2"></i>Fast Worldwide Shipping (5 days delivery) | 100% Satisfaction Guarantee</p>
+    </div>
+
+    <!-- Header/Navigation -->
+    <header class="sticky top-0 z-50 bg-white shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <a href="#" class="text-2xl font-bold text-gray-900 hover:text-blue-600 transition-colors duration-300">
+                        <i class="fas fa-server mr-2"></i>Elite Stack
+                    </a>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <nav class="hidden md:flex space-x-8 items-center">
+                    <a href="#home" class="text-gray-700 hover:text-blue-600 transition-colors duration-300 font-medium">Home</a>
+                    <a href="#features" class="text-gray-700 hover:text-blue-600 transition-colors duration-300 font-medium">Features</a>
+                    <a href="#benefits" class="text-gray-700 hover:text-blue-600 transition-colors duration-300 font-medium">Benefits</a>
+                    <a href="#about" class="text-gray-700 hover:text-blue-600 transition-colors duration-300 font-medium">About</a>
+                    <a href="#testimonials" class="text-gray-700 hover:text-blue-600 transition-colors duration-300 font-medium">Testimonials</a>
+                    <a href="#faq" class="text-gray-700 hover:text-blue-600 transition-colors duration-300 font-medium">FAQ</a>
+                    <a href="#contact" class="text-gray-700 hover:text-blue-600 transition-colors duration-300 font-medium">Contact</a>
+                </nav>
+
+                <!-- Search and CTA -->
+                <div class="hidden md:flex items-center space-x-4">
+                    <div class="relative">
+                        <input type="text" placeholder="Search..." class="bg-gray-100 text-gray-900 px-4 py-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600 transition-all duration-300" aria-label="Search">
+                        <i class="fas fa-search absolute right-3 top-2.5 text-gray-400"></i>
+                    </div>
+                    <a href="https://elitestack.co.za/checkout" class="bg-blue-600 text-white px-6 py-2 rounded-lg font-semibold hover:bg-blue-700 hover:shadow-lg transform hover:scale-105 transition-all duration-300">Buy Now</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="mobile-menu-button md:hidden text-gray-900 focus:outline-none" aria-label="Toggle menu" aria-expanded="false">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+
+            <!-- Mobile Navigation Menu -->
+            <div class="mobile-menu hidden md:hidden flex-col pb-4 space-y-2">
+                <a href="#home" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-lg transition-colors duration-300">Home</a>
+                <a href="#features" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-lg transition-colors duration-300">Features</a>
+                <a href="#benefits" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-lg transition-colors duration-300">Benefits</a>
+                <a href="#about" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-lg transition-colors duration-300">About</a>
+                <a href="#testimonials" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-lg transition-colors duration-300">Testimonials</a>
+                <a href="#faq" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-lg transition-colors duration-300">FAQ</a>
+                <a href="#contact" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-lg transition-colors duration-300">Contact</a>
+                <a href="https://elitestack.co.za/checkout" class="block mx-4 mt-4 bg-blue-600 text-white px-6 py-2 rounded-lg font-semibold hover:bg-blue-700 transition-colors duration-300 text-center">Buy Now</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative h-screen md:h-[600px] bg-cover bg-center bg-no-repeat flex items-center justify-center overflow-hidden" style="background-image: url('https://images.unsplash.com/photo-1504093376055-b3094b674dcb?w=1600&h=900&fit=crop&q=80');">
+        <!-- Dark Gradient Overlay -->
+        <div class="absolute inset-0 bg-gradient-to-r from-gray-900 via-gray-900/70 to-gray-900/50"></div>
+
+        <!-- Hero Content -->
+        <div class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center animate-fade-in-up">
+            <h1 class="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight tracking-tight">
+                Elite Stack - Professional Hosting Service
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-100 mb-8 leading-relaxed font-light">
+                Get Your Hosting Today!
+            </p>
+            <p class="text-lg text-gray-200 mb-12 max-w-2xl mx-auto leading-relaxed">
+                Experience lightning-fast, reliable, and secure hosting solutions tailored for your business needs. Join thousands of satisfied customers worldwide.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <a href="https://elitestack.co.za/checkout" class="bg-blue-600 text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-blue-700 hover:shadow-xl transform hover:scale-105 transition-all duration-300 inline-flex items-center">
+                    <i class="fas fa-rocket mr-2"></i>Get Started Now
+                </a>
+                <a href="#features" class="bg-white text-gray-900 px-8 py-4 rounded-lg font-bold text-lg hover:bg-gray-100 hover:shadow-lg transform hover:scale-105 transition-all duration-300 inline-flex items-center">
+                    <i class="fas fa-arrow-down mr-2"></i>Learn More
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-24 px-4 sm:px-6 lg:px-8 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16 animate-fade-in-up">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4 tracking-tight">Why Choose Elite Stack?</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed">
+                    Discover the features that make Elite Stack the preferred choice for professionals and businesses worldwide.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Feature 1: Fast -->
+                <div class="bg-white border-2 border-gray-200 rounded-xl p-8 hover:shadow-xl hover:border-blue-400 transform hover:scale-105 transition-all duration-300 group">
+                    <div class="bg-gradient-to-br from-blue-500 to-blue-600 w-16 h-16 rounded-lg flex items-center justify-center mb-6 group-hover:shadow-lg transition-all duration-300">
+                        <i class="fas fa-bolt text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Lightning Fast</h3>
+                    <p class="text-gray-600 leading-relaxed mb-4">
+                        Experience blazing-fast loading speeds with our optimized infrastructure. Our servers are strategically located worldwide to ensure minimal latency and maximum performance for your applications.
+                    </p>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>99.99% Uptime Guarantee</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>SSD Storage Included</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>CDN Integration</li>
+                    </ul>
+                </div>
+
+                <!-- Feature 2: Reliable -->
+                <div class="bg-white border-2 border-gray-200 rounded-xl p-8 hover:shadow-xl hover:border-blue-400 transform hover:scale-105 transition-all duration-300 group">
+                    <div class="bg-gradient-to-br from-green-500 to-green-600 w-16 h-16 rounded-lg flex items-center justify-center mb-6 group-hover:shadow-lg transition-all duration-300">
+                        <i class="fas fa-shield-alt text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Highly Reliable</h3>
+                    <p class="text-gray-600 leading-relaxed mb-4">
+                        Count on our rock-solid infrastructure built with redundancy and failover systems. We maintain multiple data centers to ensure your website stays online 24/7, no matter what.
+                    </p>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Automatic Backups</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Redundant Systems</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>24/7 Monitoring</li>
+                    </ul>
+                </div>
+
+                <!-- Feature 3: Secure -->
+                <div class="bg-white border-2 border-gray-200 rounded-xl p-8 hover:shadow-xl hover:border-blue-400 transform hover:scale-105 transition-all duration-300 group">
+                    <div class="bg-gradient-to-br from-purple-500 to-purple-600 w-16 h-16 rounded-lg flex items-center justify-center mb-6 group-hover:shadow-lg transition-all duration-300">
+                        <i class="fas fa-lock text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Enterprise Security</h3>
+                    <p class="text-gray-600 leading-relaxed mb-4">
+                        Protect your data with military-grade encryption and advanced security protocols. Our comprehensive security suite includes DDoS protection, firewalls, and regular security audits.
+                    </p>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>SSL Certificates</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>DDoS Protection</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Malware Scanning</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="py-24 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-20 animate-fade-in-up">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4 tracking-tight">Unmatched Benefits</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed">
+                    Discover why Elite Stack stands out from the competition
+                </p>
+            </div>
+
+            <!-- Benefit 1: Affordable -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-20 bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300">
+                <div class="p-8 md:p-12 order-2 md:order-1">
+                    <h3 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Affordable Pricing</h3>
+                    <p class="text-gray-600 leading-relaxed mb-6 text-lg">
+                        We believe professional hosting shouldn't break the bank. Our transparent pricing model offers exceptional value without hidden fees or surprise charges. Start with our budget-friendly plans and scale as your business grows.
+                    </p>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 text-xl mr-4 mt-1 flex-shrink-0"></i>
+                            <div>
+                                <p class="font-semibold text-gray-900">No Setup Fees</p>
+                                <p class="text-gray-600 text-sm">Start hosting immediately without any initial costs</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 text-xl mr-4 mt-1 flex-shrink-0"></i>
+                            <div>
+                                <p class="font-semibold text-gray-900">Flexible Billing</p>
+                                <p class="text-gray-600 text-sm">Choose monthly, quarterly, or annual payment options</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 text-xl mr-4 mt-1 flex-shrink-0"></i>
+                            <div>
+                                <p class="font-semibold text-gray-900">Money-Back Guarantee</p>
+                                <p class="text-gray-600 text-sm">30-day guarantee if you're not completely satisfied</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <a href="https://elitestack.co.za/checkout" class="inline-flex items-center bg-blue-600 text-white px-8 py-3 rounded-lg font-bold hover:bg-blue-700 hover:shadow-lg transform hover:scale-105 transition-all duration-300">
+                        <i class="fas fa-shopping-cart mr-2"></i>View Pricing
+                    </a>
+                </div>
+                <div class="h-64 md:h-96 overflow-hidden rounded-2xl order-1 md:order-2">
+                    <img src="https://images.unsplash.com/photo-1556740714-a8395b3bf30f?w=800&h=600&fit=crop&q=80" alt="Affordable Pricing" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
+                </div>
+            </div>
+
+            <!-- Benefit 2: Variety -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-20 bg-gray-50 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300">
+                <div class="h-64 md:h-96 overflow-hidden rounded-2xl">
+                    <img src="https://images.unsplash.com/photo-1502982720700-bfff97f2ecac?w=800&h=600&fit=crop&q=80" alt="Variety of Solutions" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="p-8 md:p-12">
+                    <h3 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Diverse Hosting Solutions</h3>
+                    <p class="text-gray-600 leading-relaxed mb-6 text-lg">
+                        Whether you need shared hosting for small projects or dedicated servers for enterprise applications, we have the perfect solution. Our comprehensive range of hosting options ensures you get exactly what you need.
+                    </p>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 text-xl mr-4 mt-1 flex-shrink-0"></i>
+                            <div>
+                                <p class="font-semibold text-gray-900">Shared Hosting</p>
+                                <p class="text-gray-600 text-sm">Perfect for small businesses and personal projects</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 text-xl mr-4 mt-1 flex-shrink-0"></i>
+                            <div>
+                                <p class="font-semibold text-gray-900">VPS Hosting</p>
+                                <p class="text-gray-600 text-sm">Scalable solutions for growing businesses</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 text-xl mr-4 mt-1 flex-shrink-0"></i>
+                            <div>
+                                <p class="font-semibold text-gray-900">Dedicated Servers</p>
+                                <p class="text-gray-600 text-sm">Maximum power for demanding applications</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <a href="https://elitestack.co.za/checkout" class="inline-flex items-center bg-blue-600 text-white px-8 py-3 rounded-lg font-bold hover:bg-blue-700 hover:shadow-lg transform hover:scale-105 transition-all duration-300">
+                        <i class="fas fa-server mr-2"></i>Explore Plans
+                    </a>
+                </div>
+            </div>
+
+            <!-- Benefit 3: Trusted -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300">
+                <div class="p-8 md:p-12 order-2 md:order-1">
+                    <h3 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Trusted by Thousands</h3>
+                    <p class="text-gray-600 leading-relaxed mb-6 text-lg">
+                        With over a decade of industry experience, Elite Stack has earned the trust of thousands of businesses worldwide. Our commitment to excellence and customer satisfaction is reflected in our exceptional reputation and countless success stories.
+                    </p>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 text-xl mr-4 mt-1 flex-shrink-0"></i>
+                            <div>
+                                <p class="font-semibold text-gray-900">Award-Winning Support</p>
+                                <p class="text-gray-600 text-sm">24/7 expert support via chat, email, and phone</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 text-xl mr-4 mt-1 flex-shrink-0"></i>
+                            <div>
+                                <p class="font-semibold text-gray-900">Industry Certifications</p>
+                                <p class="text-gray-600 text-sm">ISO certified and compliance with international standards</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 text-xl mr-4 mt-1 flex-shrink-0"></i>
+                            <div>
+                                <p class="font-semibold text-gray-900">Community Trust</p>
+                                <p class="text-gray-600 text-sm">Highly rated on independent review platforms</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <a href="https://elitestack.co.za/checkout" class="inline-flex items-center bg-blue-600 text-white px-8 py-3 rounded-lg font-bold hover:bg-blue-700 hover:shadow-lg transform hover:scale-105 transition-all duration-300">
+                        <i class="fas fa-star mr-2"></i>Join Our Community
+                    </a>
+                </div>
+                <div class="h-64 md:h-96 overflow-hidden rounded-2xl order-1 md:order-2">
+                    <img src="https://images.unsplash.com/photo-1471341971476-ae15ff5dd4ea?w=800&h=600&fit=crop&q=80" alt="Trusted Solutions" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-gray-50 to-gray-100">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16 animate-fade-in-up">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4 tracking-tight">About Elite Stack</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed">
+                    Learn about our journey and commitment to excellence
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="bg-white rounded-2xl shadow-lg p-8 md:p-12 hover:shadow-xl transition-all duration-300">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-6">Our Story</h3>
+                    <p class="text-gray-600 leading-relaxed mb-6 text-lg">
+                        Elite Stack was founded in 2013 by a team of passionate web developers and infrastructure experts who believed that professional hosting should be accessible to everyone. Starting from a small operation in Cape Town, South Africa, we've grown into a global hosting provider serving thousands of customers across six continents. Our journey has been driven by a simple philosophy: deliver exceptional hosting solutions with uncompromising quality and customer service. Over the past decade, we've invested heavily in our infrastructure, technology, and team to ensure that every customer receives the best possible hosting experience.
+                    </p>
+                    <p class="text-gray-600 leading-relaxed text-lg">
+                        Today, Elite Stack operates state-of-the-art data centers and employs a team of dedicated professionals who are passionate about helping businesses succeed online. Our commitment to innovation has led us to adopt the latest technologies, from containerization and microservices to AI-powered monitoring systems, ensuring that our customers always have access to cutting-edge hosting solutions.
+                    </p>
+                </div>
+
+                <div class="bg-white rounded-2xl shadow-lg p-8 md:p-12 hover:shadow-xl transition-all duration-300">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-6">Our Mission & Values</h3>
+                    <p class="text-gray-600 leading-relaxed mb-6 text-lg">
+                        At Elite Stack, our mission is to empower businesses of all sizes with reliable, secure, and affordable hosting solutions that enable them to focus on what they do best. We believe that great hosting should be transparent, dependable, and backed by exceptional support. Our core values guide everything we do: we prioritize customer success above all else, maintain the highest standards of security and reliability, and continuously innovate to stay ahead of industry trends. We're committed to building long-term partnerships with our customers, not just selling services.
+                    </p>
+                    <p class="text-gray-600 leading-relaxed text-lg">
+                        Our vision is to become the most trusted hosting provider globally, recognized for our technical excellence, customer-centric approach, and contribution to the digital economy. We're investing in sustainable practices, community development, and next-generation technologies to ensure that Elite Stack remains at the forefront of the hosting industry for decades to come.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Stats Section -->
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mt-16">
+                <div class="bg-white rounded-xl p-8 text-center shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300">
+                    <div class="text-4xl font-bold text-blue-600 mb-2">10+</div>
+                    <p class="text-gray-600 font-semibold">Years in Business</p>
+                </div>
+                <div class="bg-white rounded-xl p-8 text-center shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300">
+                    <div class="text-4xl font-bold text-blue-600 mb-2">50K+</div>
+                    <p class="text-gray-600 font-semibold">Happy Customers</p>
+                </div>
+                <div class="bg-white rounded-xl p-8 text-center shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300">
+                    <div class="text-4xl font-bold text-blue-600 mb-2">99.99%</div>
+                    <p class="text-gray-600 font-semibold">Uptime Guarantee</p>
+                </div>
+                <div class="bg-white rounded-xl p-8 text-center shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300">
+                    <div class="text-4xl font-bold text-blue-600 mb-2">6</div>
+                    <p class="text-gray-600 font-semibold">Continents Served</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-24 px-4 sm:px-6 lg:px-8 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16 animate-fade-in-up">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4 tracking-tight">What Our Customers Say</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed">
+                    Join thousands of satisfied customers who trust Elite Stack for their hosting needs
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-white border-2 border-gray-200 rounded-xl p-8 hover:shadow-xl hover:border-blue-400 transform hover:scale-105 transition-all duration-300">
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 leading-relaxed mb-6">
+                        "Elite Stack transformed our online presence! The migration was seamless, and the performance improvements were immediate. Our page load times dropped by 60%, and we've never had a single downtime issue. The support team is incredibly responsive and knowledgeable."
+                    </p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center text-white font-bold mr-4">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div>
+                            <p class="font-bold text-gray-900">Sarah Johnson</p>
+                            <p class="text-sm text-gray-600">CEO, Digital Innovations Ltd</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-white border-2 border-gray-200 rounded-xl p-8 hover:shadow-xl hover:border-blue-400 transform hover:scale-105 transition-all duration-300">
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 leading-relaxed mb-6">
+                        "As a startup founder, budget was critical. Elite Stack offers incredible value without compromising on quality. Their VPS plans are perfect for our growing needs, and we've scaled from shared hosting to dedicated servers without any issues. Highly recommended!"
+                    </p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 bg-gradient-to-br from-green-500 to-green-600 rounded-full flex items-center justify-center text-white font-bold mr-4">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div>
+                            <p class="font-bold text-gray-900">Michael Chen</p>
+                            <p class="text-sm text-gray-600">Founder, TechStart Solutions</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="bg-white border-2 border-gray-200 rounded-xl p-8 hover:shadow-xl hover:border-blue-400 transform hover:scale-105 transition-all duration-300">
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 leading-relaxed mb-6">
+                        "Security was our top priority when choosing a hosting provider. Elite Stack exceeded our expectations with their comprehensive security features and regular audits. The SSL certificates, DDoS protection, and malware scanning give us complete peace of mind."
+                    </p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 bg-gradient-to-br from-purple-500 to-purple-600 rounded-full flex items-center justify-center text-white font-bold mr-4">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div>
+                            <p class="font-bold text-gray-900">Emma Williams</p>
+                            <p class="text-sm text-gray-600">Security Director, FinanceCore Inc</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 4 -->
+                <div class="bg-white border-2 border-gray-200 rounded-xl p-8 hover:shadow-xl hover:border-blue-400 transform hover:scale-105 transition-all duration-300">
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 leading-relaxed mb-6">
+                        "The customer support team at Elite Stack is exceptional! They helped us troubleshoot a complex configuration issue within minutes. Their technical expertise combined with their willingness to go the extra mile makes them stand out from competitors."
+                    </p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 bg-gradient-to-br from-orange-500 to-orange-600 rounded-full flex items-center justify-center text-white font-bold mr-4">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div>
+                            <p class="font-bold text-gray-900">David Martinez</p>
+                            <p class="text-sm text-gray-600">CTO, Creative Agency Pro</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-gray-50 to-gray-100">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-16 animate-fade-in-up">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4 tracking-tight">Frequently Asked Questions</h2>
+                <p class="text-xl text-gray-600 leading-relaxed">
+                    Find answers to common questions about Elite Stack hosting services
+                </p>
+            </div>
+
+            <div class="space-y-4">
+                <!-- FAQ 1 -->
+                <div class="faq-item bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden border-2 border-gray-200 hover:border-blue-400">
+                    <button class="faq-toggle w-full px-8 py-6 text-left flex justify-between items-center focus:outline-none group" aria-expanded="false">
+                        <h3 class="text-lg font-bold text-gray-900 group-hover:text-blue-600 transition-colors duration-300">
+                            <i class="fas fa-question-circle text-blue-600 mr-3"></i>What hosting plan should I choose for my website?
+                        </h3>
+                        <i class="fas fa-chevron-down text-gray-600 group-hover:text-blue-600 transition-all duration-300 transform group-hover:rotate-180"></i>
+                    </button>
+                    <div class="faq-answer px-8 pb-6 border-t border-gray-200">
+                        <p class="text-gray-600 leading-relaxed mb-4">
+                            Choosing the right hosting plan depends on several factors including your website's traffic, resource requirements, and growth expectations. Here's a quick guide:
+                        </p>
+                        <ul class="space-y-3 text-gray-600">
+                            <li class="flex items-start">
+                                <i class="fas fa-arrow-right text-blue-600 mr-3 mt-1 flex-shrink-0"></i>
+                                <div>
+                                    <strong>Shared Hosting:</strong> Ideal for small websites, blogs, and portfolios with moderate traffic (under 10,000 monthly visitors)
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-arrow-right text-blue-600 mr-3 mt-1 flex-shrink-0"></i>
+                                <div>
+                                    <strong>VPS Hosting:</strong> Perfect for growing businesses, e-commerce sites, and applications requiring more control and resources
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-arrow-right text-blue-600 mr-3 mt-1 flex-shrink-0"></i>
+                                <div>
+                                    <strong>Dedicated Servers:</strong> Best for high-traffic websites, resource-intensive applications, and enterprises requiring maximum performance
+                                </div>
+                            </li>
+                        </ul>
+                        <p class="text-gray-600 leading-relaxed mt-4">
+                            Our sales team can help you assess your needs and recommend the perfect plan. Contact us at info@elitestack.co.za for personalized guidance.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ 2 -->
+                <div class="faq-item bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden border-2 border-gray-200 hover:border-blue-400">
+                    <button class="faq-toggle w-full px-8 py-6 text-left flex justify-between items-center focus:outline-none group" aria-expanded="false">
+                        <h3 class="text-lg font-bold text-gray-900 group-hover:text-blue-600 transition-colors duration-300">
+                            <i class="fas fa-question-circle text-blue-600 mr-3"></i>How do I migrate my website from another hosting provider?
+                        </h3>
+                        <i class="fas fa-chevron-down text-gray-600 group-hover:text-blue-600 transition-all duration-300 transform group-hover:rotate-180"></i>
+                    </button>
+                    <div class="faq-answer px-8 pb-6 border-t border-gray-200">
+                        <p class="text-gray-600 leading-relaxed mb-4">
+                            We make website migration simple and hassle-free! Here's our process:
+                        </p>
+                        <ol class="space-y-3 text-gray-600 list-decimal list-inside">
+                            <li><strong>Contact our migration team</strong> - We'll assess your current setup and create a migration plan</li>
+                            <li><strong>Backup your data</strong> - We'll securely backup all your files and databases</li>
+                            <li><strong>Set up your account</strong> - Your new hosting account is prepared with all necessary configurations</li>
+                            <li><strong>Transfer your data</strong> - Files, databases, and emails are transferred to Elite Stack servers</li>
+                            <li><strong>Testing and verification</strong> - We thoroughly test everything to ensure nothing is lost</li>
+                            <li><strong>Go live</strong> - Once you're ready, we update your DNS records and your site goes live on Elite Stack</li>
+                        </ol>
+                        <p class="text-gray-600 leading-relaxed mt-4">
+                            The entire process typically takes 24-48 hours, and our expert team handles everything to minimize downtime. Best of all, our migration service is completely free for new customers!
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ 3 -->
+                <div class="faq-item bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden border-2 border-gray-200 hover:border-blue-400">
+                    <button class="faq-toggle w-full px-8 py-6 text-left flex justify-between items-center focus:outline-none group" aria-expanded="false">
+                        <h3 class="text-lg font-bold text-gray-900 group-hover:text-blue-600 transition-colors duration-300">
+                            <i class="fas fa-question-circle text-blue-600 mr-3"></i>What kind of support does Elite Stack provide?
+                        </h3>
+                        <i class="fas fa-chevron-down text-gray-600 group-hover:text-blue-600 transition-all duration-300 transform group-hover:rotate-180"></i>
+                    </button>
+                    <div class="faq-answer px-8 pb-6 border-t border-gray-200">
+                        <p class="text-gray-600 leading-relaxed mb-4">
+                            We're committed to providing exceptional support to all our customers. Here's what you can expect:
+                        </p>
+                        <div class="space-y-4 text-gray-600">
+                            <div class="bg-blue-50 p-4 rounded-lg">
+                                <strong class="text-gray-900">24/7 Support Availability</strong>
+                                <p class="mt-2">Our support team is available round the clock to help with any issues or questions you may have.</p>
+                            </div>
+                            <div class="bg-blue-50 p-4 rounded-lg">
+                                <strong class="text-gray-900">Multiple Support Channels</strong>
+                                <p class="mt-2">Reach us via live chat, email (info@elitestack.co.za), phone, or our support ticket system - choose what works best for you.</p>
+                            </div>
+                            <div class="bg-blue-50 p-4 rounded-lg">
+                                <strong class="text-gray-900">Expert Technicians</strong>
+                                <p class="mt-2">Our support team consists of experienced system administrators and developers who can assist with complex technical issues.</p>
+                            </div>
+                            <div class="bg-blue-50 p-4 rounded-lg">
+                                <strong class="text-gray-900">Knowledge Base & Documentation</strong>
+                                <p class="mt-2">Access our comprehensive knowledge base with tutorials, guides, and best practices for managing your hosting account.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ 4 -->
+                <div class="faq-item bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden border-2 border-gray-200 hover:border-blue-400">
+                    <button class="faq-toggle w-full px-8 py-6 text-left flex justify-between items-center focus:outline-none group" aria-expanded="false">
+                        <h3 class="text-lg font-bold text-gray-900 group-hover:text-blue-600 transition-colors duration-300">
+                            <i class="fas fa-question-circle text-blue-600 mr-3"></i>What security measures does Elite Stack have in place?
+                        </h3>
+                        <i class="fas fa-chevron-down text-gray-600 group-hover:text-blue-600 transition-all duration-300 transform group-hover:rotate-180"></i>
+                    </button>
+                    <div class="faq-answer px-8 pb-6 border-t border-gray-200">
+                        <p class="text-gray-600 leading-relaxed mb-4">
+                            Security is our top priority. We implement multiple layers of protection:
+                        </p>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-gray-600">
+                            <div class="flex items-start">
+                                <i class="fas fa-shield-alt text-green-500 mr-3 mt-1 flex-shrink-0"></i>
+                                <div>
+                                    <strong class="text-gray-900">SSL Certificates</strong>
+                                    <p class="text-sm mt-1">Free SSL certificates for all domains with automatic renewal</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fas fa-shield-alt text-green-500 mr-3 mt-1 flex-shrink-0"></i>
+                                <div>
+                                    <strong class="text-gray-900">DDoS Protection</strong>
+                                    <p class="text-sm mt-1">Advanced protection against distributed denial of service attacks</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fas fa-shield-alt text-green-500 mr-3 mt-1 flex-shrink-0"></i>
+                                <div>
+                                    <strong class="text-gray-900">Malware Scanning</strong>
+                                    <p class="text-sm mt-1">Continuous monitoring and automatic malware detection</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fas fa-shield-alt text-green-500 mr-3 mt-1 flex-shrink-0"></i>
+                                <div>
+                                    <strong class="text-gray-900">Firewall Protection</strong>
+                                    <p class="text-sm mt-1">Enterprise-grade firewalls to protect against unauthorized access</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fas fa-shield-alt text-green-500 mr-3 mt-1 flex-shrink-0"></i>
+                                <div>
+                                    <strong class="text-gray-900">Automatic Backups</strong>
+                                    <p class="text-sm mt-1">Daily automated backups with easy restoration options</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fas fa-shield-alt text-green-500 mr-3 mt-1 flex-shrink-0"></i>
+                                <div>
+                                    <strong class="text-gray-900">Security Audits</strong>
+                                    <p class="text-sm mt-1">Regular third-party security audits and compliance checks</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-blue-600 to-blue-800 text-white relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute top-0 left-0 w-96 h-96 bg-white rounded-full blur-3xl"></div>
+            <div class="absolute bottom-0 right-0 w-96 h-96 bg-white rounded-full blur-3xl"></div>
+        </div>
+        <div class="max-w-4xl mx-auto text-center relative z-10">
+            <h2 class="text-4xl md:text-5xl font-bold mb-6 tracking-tight">Ready to Get Started?</h2>
+            <p class="text-xl text-blue-100 mb-10 leading-relaxed max-w-2xl mx-auto">
+                Join thousands of satisfied customers and experience the Elite Stack difference. Get your hosting today with our 30-day money-back guarantee.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <a href="https://elitestack.co.za/checkout" class="bg-white text-blue-600 px-10 py-4 rounded-lg font-bold text-lg hover:bg-blue-50 hover:shadow-xl transform hover:scale-105 transition-all duration-300 inline-flex items-center">
+                    <i class="fas fa-rocket mr-2"></i>Start Your Free Trial
+                </a>
+                <a href="#contact" class="border-2 border-white text-white px-10 py-4 rounded-lg font-bold text-lg hover:bg-white hover:text-blue-600 hover:shadow-xl transform hover:scale-105 transition-all duration-300 inline-flex items-center">
+                    <i class="fas fa-envelope mr-2"></i>Contact Sales
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 px-4 sm:px-6 lg:px-8 bg-white">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-16 animate-fade-in-up">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4 tracking-tight">Get In Touch</h2>
+                <p class="text-xl text-gray-600 leading-relaxed">
+                    Have questions? Our team is here to help
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+                <div class="bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl p-8 text-center hover:shadow-lg transition-all duration-300">
+                    <div class="bg-blue-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-envelope text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Email</h3>
+                    <p class="text-gray-600 mb-4">Send us an email anytime</p>
+                    <a href="mailto:info@elitestack.co.za" class="text-blue-600 font-semibold hover:text-blue-700 transition-colors duration-300">info@elitestack.co.za</a>
+                </div>
+
+                <div class="bg-gradient-to-br from-green-50 to-green-100 rounded-xl p-8 text-center hover:shadow-lg transition-all duration-300">
+                    <div class="bg-green-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-phone text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Phone</h3>
+                    <p class="text-gray-600 mb-4">Available 24/7 for support</p>
+                    <p class="text-green-600 font-semibold">+27 (0) 21 555 0123</p>
+                </div>
+
+                <div class="bg-gradient-to-br from-purple-50 to-purple-100 rounded-xl p-8 text-center hover:shadow-lg transition-all duration-300">
+                    <div class="bg-purple-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-map-marker-alt text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Office</h3>
+                    <p class="text-gray-600 mb-4">Visit us in Cape Town</p>
+                    <p class="text-purple-600 font-semibold">Cape Town, South Africa</p>
+                </div>
+            </div>
+
+            <div class="bg-gradient-to-br from-gray-50 to-gray-100 rounded-2xl p-8 md:p-12 shadow-lg">
+                <form class="space-y-6" onsubmit="return handleFormSubmit(event)">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label for="name" class="block text-gray-900 font-semibold mb-2">Full Name</label>
+                            <input type="text" id="name" name="name" required class="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-blue-600 focus:outline-none transition-all duration-300" placeholder="John Doe">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-gray-900 font-semibold mb-2">Email Address</label>
+                            <input type="email" id="email" name="email" required class="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-blue-600 focus:outline-none transition-all duration-300" placeholder="john@example.com">
+                        </div>
+                    </div>
+                    <div>
+                        <label for="subject" class="block text-gray-900 font-semibold mb-2">Subject</label>
+                        <input type="text" id="subject" name="subject" required class="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-blue-600 focus:outline-none transition-all duration-300" placeholder="How can we help?">
+                    </div>
+                    <div>
+                        <label for="message" class="block text-gray-900 font-semibold mb-2">Message</label>
+                        <textarea id="message" name="message" rows="6" required class="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-blue-600 focus:outline-none transition-all duration-300 resize-none" placeholder="Tell us more about your inquiry..."></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-blue-600 text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-blue-700 hover:shadow-lg transform hover:scale-105 transition-all duration-300 inline-flex items-center justify-center">
+                        <i class="fas fa-paper-plane mr-2"></i>Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-16 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+                <!-- Company Info -->
+                <div>
+                    <h3 class="text-white font-bold text-xl mb-6 flex items-center">
+                        <i class="fas fa-server mr-2"></i>Elite Stack
+                    </h3>
+                    <p class="text-gray-400 leading-relaxed mb-6">
+                        Professional hosting solutions for businesses of all sizes. Fast, reliable, and secure.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-blue-600 transition-all duration-300 transform hover:scale-110">
+                            <i class="fab fa-facebook-f text-white"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-blue-400 transition-all duration-300 transform hover:scale-110">
+                            <i class="fab fa-twitter text-white"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-pink-600 transition-all duration-300 transform hover:scale-110">
+                            <i class="fab fa-instagram text-white"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-blue-700 transition-all duration-300 transform hover:scale-110">
+                            <i class="fab fa-linkedin-in text-white"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-white font-bold text-lg mb-6">Quick Links</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#home" class="text-gray-400 hover:text-white transition-colors duration-300 flex items-center"><i class="fas fa-arrow-right mr-2 text-blue-500"></i>Home</a></li>
+                        <li><a href="#features" class="text-gray-400 hover:text-white transition-colors duration-300 flex items-center"><i class="fas fa-arrow-right mr-2 text-blue-500"></i>Features</a></li>
+                        <li><a href="#benefits" class="text-gray-400 hover:text-white transition-colors duration-300 flex items-center"><i class="fas fa-arrow-right mr-2 text-blue-500"></i>Benefits</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-white transition-colors duration-300 flex items-center"><i class="fas fa-arrow-right mr-2 text-blue-500"></i>About Us</a></li>
+                        <li><a href="#testimonials" class="text-gray-400 hover:text-white transition-colors duration-300 flex items-center"><i class="fas fa-arrow-right mr-2 text-blue-500"></i>Testimonials</a></li>
+                    </ul>
+                </div>
+
+                <!-- Resources -->
+                <div>
+                    <h4 class="text-white font-bold text-lg mb-6">Resources</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#faq" class="text-gray-400 hover:text-white transition-colors duration-300 flex items-center"><i class="fas fa-arrow-right mr-2 text-blue-500"></i>FAQ</a></li>
+                        <li><a href="blog.html" class="text-gray-400 hover:text-white transition-colors duration-300 flex items-center"><i class="fas fa-arrow-right mr-2 text-blue-500"></i>Blog</a></li>
+                        <li><a href="privacy.html" class="text-gray-400 hover:text-white transition-colors duration-300 flex items-center"><i class="fas fa-arrow-right mr-2 text-blue-500"></i>Privacy Policy</a></li>
+                        <li><a href="terms.html" class="text-gray-400 hover:text-white transition-colors duration-300 flex items-center"><i class="fas fa-arrow-right mr-2 text-blue-500"></i>Terms of Service</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-white transition-colors duration-300 flex items-center"><i class="fas fa-arrow-right mr-2 text-blue-500"></i>Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h4 class="text-white font-bold text-lg mb-6">Contact Info</h4>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <i class="fas fa-envelope text-blue-500 mr-3 mt-1 flex-shrink-0"></i>
+                            <div>
+                                <p class="text-gray-400">Email</p>
+                                <a href="mailto:info@elitestack.co.za" class="text-white hover:text-blue-400 transition-colors duration-300">info@elitestack.co.za</a>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-phone text-blue-500 mr-3 mt-1 flex-shrink-0"></i>
+                            <div>
+                                <p class="text-gray-400">Phone</p>
+                                <p class="text-white">+27 (0) 21 555 0123</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt text-blue-500 mr-3 mt-1 flex-shrink-0"></i>
+                            <div>
+                                <p class="text-gray-400">Address</p>
+                                <p class="text-white">Cape Town, South Africa</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="border-t border-gray-800 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <p class="text-gray-400 text-center md:text-left mb-4 md:mb-0">
+                        &copy; 2024 Elite Stack. All rights reserved. | Powered by Elite Stack Infrastructure
+                    </p>
+                    <div class="flex space-x-6">
+                        <a href="privacy.html" class="text-gray-400 hover:text-white transition-colors duration-300">Privacy Policy</a>
+                        <a href="terms.html" class="text-gray-400 hover:text-white transition-colors duration-300">Terms of Service</a>
+                        <a href="blog.html" class="text-gray-400 hover:text-white transition-colors duration-300">Blog</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuButton = document.querySelector('.mobile-menu-button');
+        const mobileMenu = document.querySelector('.mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('active');
+            const isExpanded = mobileMenuButton.getAttribute('aria-expanded') === 'true';
+            mobileMenuButton.setAttribute('aria-expanded', !isExpanded);
+        });
+
+        // Close mobile menu when a link is clicked
+        const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+        mobileMenuLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.remove('active');
+                mobileMenuButton.setAttribute('aria-expanded', 'false');
+            });
+        });
+
+        // FAQ Accordion
+        const faqToggles = document.querySelectorAll('.faq-toggle');
+
+        faqToggles.forEach(toggle => {
+            toggle.addEventListener('click', () => {
+                const faqItem = toggle.closest('.faq-item');
+                const isActive = faqItem.classList.contains('active');
+
+                // Close all other FAQ items
+                document.querySelectorAll('.faq-item').forEach(item => {
+                    item.classList.remove('active');
+                    item.querySelector('.faq-toggle').setAttribute('aria-expanded', 'false');
+                });
+
+                // Toggle current item
+                if (!isActive) {
+                    faqItem.classList.add('active');
+                    toggle.setAttribute('aria-expanded', 'true');
+                }
+            });
+        });
+
+        // Form Submission
+        function handleFormSubmit(event) {
+            event.preventDefault();
+            const form = event.target;
+            const formData = new FormData(form);
+            
+            // Simulate form submission
+            console.log('Form submitted with data:', Object.fromEntries(formData));
+            
+            // Show success message
+            const submitButton = form.querySelector('button[type="submit"]');
+            const originalText = submitButton.innerHTML;
+            submitButton.innerHTML = '<i class="fas fa-check mr-2"></i>Message Sent Successfully!';
+            submitButton.classList.add('bg-green-600');
+            submitButton.classList.remove('bg-blue-600', 'hover:bg-blue-700');
+            
+            // Reset form
+            form.reset();
+            
+            // Restore button after 3 seconds
+            setTimeout(() => {
+                submitButton.innerHTML = originalText;
+                submitButton.classList.remove('bg-green-600');
+                submitButton.classList.add('bg-blue-600', 'hover:bg-blue-700');
+            }, 3000);
+            
+            return false;
+        }
+
+        // Smooth scroll behavior
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+                if (href !== '#' && document.querySelector(href)) {
+                    e.preventDefault();
+                    const target = document.querySelector(href);
+                    const offsetTop = target.offsetTop - 80;
+                    window.scrollTo({
+                        top: offsetTop,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Add scroll animation on page load
+        window.addEventListener('load', () => {
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -100px 0px'
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('animate-fade-in-up');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('section > div > div').forEach(el => {
+                observer.observe(el);
+            });
+        });
+    </script>
+</body>
+</html>
